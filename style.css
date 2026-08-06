@@ -851,4 +851,21 @@ nav a.active::after {
   background-color: #0d1b4c;
 }
 
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  min-height: 16px;
+}
+
+.form-group input.invalid,
+.form-group textarea.invalid {
+  border-color: #e74c3c;
+}
+
+.form-success {
+  color: #2e7d32;
+  font-weight: bold;
+  text-align: center;
+}
+
 
