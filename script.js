@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+  document.body.classList.add("loaded");
+});
+
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
