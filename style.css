@@ -588,4 +588,99 @@ nav a.active::after {
   background-color: #ff9800;
 }
 
+.page-hero {
+  background-color: #0d1b4c;
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.page-hero h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.page-hero p {
+  color: #cfd8ff;
+  font-size: 18px;
+}
+
+.case-studies {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.case-study {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.case-study.reverse {
+  flex-direction: row-reverse;
+}
+
+.case-image {
+  width: 100%;
+  max-width: 380px;
+  height: 240px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.case-content {
+  flex: 1;
+}
+
+.case-tag {
+  display: inline-block;
+  background-color: #eceffa;
+  color: #0d1b4c;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.case-content h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.case-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.case-tags {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.case-tags li {
+  background-color: #f4f6fb;
+  color: #333;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .case-study,
+  .case-study.reverse {
+    flex-direction: column;
+  }
+
+  .case-image {
+    max-width: 100%;
+  }
+}
 
