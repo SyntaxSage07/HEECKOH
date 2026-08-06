@@ -13,13 +13,13 @@
       <button class="menu-toggle" id="menuToggle">☰</button>
       <nav id="navMenu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#about" data-nav="about">About</a></li>
+          <li><a href="#services" data-nav="services">Services</a></li>
+          <li><a href="#portfolio" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="#resources" data-nav="resources">Resources</a></li>
+          <li><a href="#pricing" data-nav="pricing">Pricing</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -105,94 +105,95 @@
       </section>
       <!-- Resources -->
       <section class="resources reveal" id="resources">
-    <h2>Resources</h2>
-    <p>Free tools and guides to help you get started.</p>
+        <h2>Resources</h2>
+        <p>Free tools and guides to help you get started.</p>
 
-    <div class="resources-grid">
-      <div class="resource-item">
-        <h4>📝 Blog</h4>
-        <p>Tips, guides & industry insights</p>
-      </div>
-      <div class="resource-item">
-        <h4>📄 Free Templates</h4>
-        <p>Ready-to-use document templates</p>
-      </div>
-      <div class="resource-item">
-        <h4>📊 SPSS Guides</h4>
-        <p>Step-by-step data analysis help</p>
-      </div>
-      <div class="resource-item">
-        <h4>🔧 Research Tools</h4>
-        <p>Handy tools for your next project</p>
-      </div>
-    </div>
-  </section>
-  <!-- Pricing -->
-   <section class="pricing reveal" id="pricing">
-    <h2>Pricing</h2>
-    <p>Simple packages for every need.</p>
+        <div class="resources-grid">
+          <div class="resource-item">
+            <h4>📝 Blog</h4>
+            <p>Tips, guides & industry insights</p>
+          </div>
+          <div class="resource-item">
+            <h4>📄 Free Templates</h4>
+            <p>Ready-to-use document templates</p>
+          </div>
+          <div class="resource-item">
+            <h4>📊 SPSS Guides</h4>
+            <p>Step-by-step data analysis help</p>
+          </div>
+          <div class="resource-item">
+            <h4>🔧 Research Tools</h4>
+            <p>Handy tools for your next project</p>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing -->
+      <section class="pricing reveal" id="pricing">
+        <h2>Pricing</h2>
+        <p>Simple packages for every need.</p>
 
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <h3>Starter</h3>
-        <p class="price">₦15,000</p>
-        <ul>
-          <li>Basic research support</li>
-          <li>1 revision</li>
-          <li>5-day delivery</li>
-        </ul>
-        <a href="#contact" class="pricing-btn">Get Started</a>
-      </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Starter</h3>
+            <p class="price">₦15,000</p>
+            <ul>
+              <li>Basic research support</li>
+              <li>1 revision</li>
+              <li>5-day delivery</li>
+            </ul>
+            <a href="#contact" class="pricing-btn">Get Started</a>
+          </div>
 
-      <div class="pricing-card featured">
-        <p class="badge">Most Popular</p>
-        <h3>Professional</h3>
-        <p class="price">₦45,000</p>
-        <ul>
-          <li>Full research & writing</li>
-          <li>3 revisions</li>
-          <li>3-day delivery</li>
-          <li>Priority support</li>
-        </ul>
-        <a href="#contact" class="pricing-btn">Get Started</a>
-      </div>
+          <div class="pricing-card featured">
+            <p class="badge">Most Popular</p>
+            <h3>Professional</h3>
+            <p class="price">₦45,000</p>
+            <ul>
+              <li>Full research & writing</li>
+              <li>3 revisions</li>
+              <li>3-day delivery</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#contact" class="pricing-btn">Get Started</a>
+          </div>
 
-      <div class="pricing-card">
-        <h3>Enterprise</h3>
-        <p class="price">Custom</p>
-        <ul>
-          <li>Full project + tech build</li>
-          <li>Unlimited revisions</li>
-          <li>Dedicated manager</li>
-        </ul>
-        <a href="#contact" class="pricing-btn">Contact Us</a>
-      </div>
-    </div>
-  </section>
-  <!-- Contact -->
-   <section class="contact reveal" id="contact">
-    <h2>Get in Touch</h2>
-    <p>Have a project in mind? Let's talk.</p>
+          <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>Full project + tech build</li>
+              <li>Unlimited revisions</li>
+              <li>Dedicated manager</li>
+            </ul>
+            <a href="#contact" class="pricing-btn">Contact Us</a>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact reveal" id="contact">
+        <h2>Get in Touch</h2>
+        <p>Have a project in mind? Let's talk.</p>
 
-    <form class="contact-form">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required>
-      </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
-      </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
 
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-      </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."
+              required></textarea>
+          </div>
 
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-  </section>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
     </main>
     <footer>
       <div class="footer-content">

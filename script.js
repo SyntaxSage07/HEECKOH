@@ -20,3 +20,23 @@ const observer = new IntersectionObserver(
 
 revealElements.forEach((el) => observer.observe(el));
 
+const sections = document.querySelectorAll("main > div[id], main > section[id]");
+const navLinks = document.querySelectorAll("nav a[data-nav]");
+
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
+
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("data-nav") === id);
+        });
+      }
+    });
+  },
+  { threshold: 0.4 }
+);
+
+sections.forEach((section) => navObserver.observe(section));
+
