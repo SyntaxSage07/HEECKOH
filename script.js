@@ -77,8 +77,7 @@ if (contactForm) {
     input.classList.remove("invalid");
   }
 
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+ contactForm.addEventListener("submit", function (e) {
     let isValid = true;
 
     if (nameInput.value.trim() === "") {
@@ -107,10 +106,8 @@ if (contactForm) {
       clearError(messageInput, "messageError");
     }
 
-    if (isValid) {
-      formSuccess.textContent = "Message sent! We'll get back to you soon.";
-      contactForm.reset();
-    } else {
+ if (!isValid) {
+      e.preventDefault();
       formSuccess.textContent = "";
     }
   });
